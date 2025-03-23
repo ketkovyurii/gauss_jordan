@@ -205,7 +205,6 @@ void Matrix::replace_row(int row_number, vector<double> replacement_row)
 // (A|I)->(I|A^(-1))
 void Matrix::gauss_jordan()
 {
-    print();
     if (value[0][0] == 0.0) // in making sure the row is not multiplied be 0 in the next loop
         for (int i = 0; i < rows; ++i)
             if (value[i][0] != 0)
